@@ -15,8 +15,10 @@ body {
     background-color: #393A41;;
     min-height: 50vh;
     max-height: 90vh;
-    min-width: 480px;
+    height: 810px;
+    min-width: 40vh;
     max-width: 90vh;
+    width: 480px;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
