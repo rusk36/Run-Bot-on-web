@@ -57,8 +57,9 @@ button:hover {
 
 .modal {
     display: none;
-    position: relative;
-    top: -60px;
+    align-self: center;
+    position: absolute;
+    left: 50vh
     width: 100%;
     overflow: auto;
     z-index: 1;
