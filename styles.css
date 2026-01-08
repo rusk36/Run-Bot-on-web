@@ -16,6 +16,7 @@ body {
 
 .entrance {
     text-align: center;
+    align-items: center;
     background-color: #393A41;;
     min-height: 50vh;
     max-height: 90vh;
