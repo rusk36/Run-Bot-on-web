@@ -24,6 +24,11 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+DeveloperNotice {
+    position: relative;
+    bottom: 12px
+}
+
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
