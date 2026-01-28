@@ -1,29 +1,39 @@
 body {
     font-family: 'Roboto', sans-serif;
     display: flex;
-    /* 主軸に対して中央揃え */
     justify-content: center;
-    /* 交差軸に対して中央揃え */
     align-items: center;
     height: 100vh;
     margin: 0;
-    color: #000; /* 黒い文字色 */
+    background-image: url(/WebAssets/discord-loginBG.svg);
+    background-color: #f0f0f0;
+    color: #fff;
+}
+
+.entrance {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #393A41;
+    height: max-content;
+    padding: 0px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
 }
 
 h1 {
     font-size: 2.5em;
-    margin-bottom: 0px;
     color: #007bff; /* 青色 */
     position: relative;
 }
 
 button {
-    position: relative;
-    align-self: center;
-    max-width: 70%;
     padding: 10px 20px;
     margin: 10px;
-    font-size: 1.5em;
+    font-size: 16px;
     border: none;
     border-radius: 5px;
     background-color: #007bff; /* 青色 */
@@ -36,63 +46,40 @@ button:hover {
     background-color: #0056b3; /* 濃い青色 */
 }
 
-/* 最初に表示されるコンテナ */
-.entrance {
-    text-align: center;
-    /* アイテムを縦に並べる */
-    flex-flow: column;
-    justify-content: space-between;
-    display: flex;
-    background-color: #393A41;
-    min-height: 50vh;
-    max-height: 90vh;
-    height: fit-content;
-    min-width: 40vh;
-    max-width: 90vh;
-    width: 480px;
-    padding: 0px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#attention {
+    font-size: 16px;
+    margin-top: 10vh;
+    color: #ccc;
 }
 
-/* 先頭に#を置いてhtml内のidを指定 */
-#authButton {
-    position: relative;
-    bottom: 0.5em;
-    align-self: center;
-}
-
-#devNotice {
-    position: relative;
-    bottom: 1em;
-    align-self: center;
-}
-
-/*先頭に.を置いてhtml内のclassを指定*/
 .modal {
-    display: none;
+    display: flex;
     position: relative;
-    top: -3em;
-    overflow: auto;
-    z-index: 1;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .modal-content {
     background-color: #393A41;
+    width: 100%;
     margin: 10%;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* closeクラスに適用する表示形式 */
 .close {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
     color: #bbb;
     float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    flex-flow: column;
 }
 
 /* closeクラスにカーソルを重ねた時の表示形式 */
@@ -104,8 +91,15 @@ button:hover {
     align-items: center;
     font-size: 16px;
     color: #ccc;
+    max-width: 100%;
     height: 24px;
+    box-sizing: border-box;
+    padding: 12px 10px;
     background-color: #35353C;
     border:1px solid #888;
     border-radius: 8px;
+}
+
+.hidden {
+    display: none;
 }
