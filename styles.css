@@ -3,11 +3,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
     background-image: url(/WebAssets/discord-loginBG.svg);
     background-color: #f0f0f0;
+    background-size: cover;
     color: #fff;
+    font-size: 18px;
 }
 
 .entrance {
@@ -15,10 +16,13 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
     background-color: #393A41;
+    min-width: 480px;
+    min-height: 360px;
+    width: 40vh;
     height: max-content;
-    padding: 0px 30px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
@@ -33,7 +37,7 @@ h1 {
 button {
     padding: 10px 20px;
     margin: 10px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     border-radius: 5px;
     background-color: #007bff; /* 青色 */
@@ -56,6 +60,7 @@ button:hover {
     display: flex;
     position: relative;
     min-width: 100%;
+    margin: -40px;
     align-items: center;
     justify-content: center;
     flex-grow: 1;
@@ -91,10 +96,10 @@ button:hover {
     align-items: center;
     font-size: 16px;
     color: #ccc;
-    max-width: 100%;
+    width: 100%;
     height: 24px;
     box-sizing: border-box;
-    padding: 12px 10px;
+    padding: 16px 16px;
     background-color: #35353C;
     border:1px solid #888;
     border-radius: 8px;

@@ -16,10 +16,12 @@
         height: 100%;
         margin: 0;
         background-image: url(WebAssets/discord-loginBG.svg);
-        color: #aaa; /* 黒い文字色 */
+        background-size: cover;
+        color: #aaa;
     }
 </style>
 <body>
+    <div name>
     <div class="entrance">
         <h1 id="Name">bot Activation Tool</h1>
         <button id="loginButton">Login</button>
@@ -29,6 +31,7 @@
                 <div></div>
                 <div>Client ID</div>
                 <input type="email" id="idBox" class="textbox">
+                <div><br></div>
                 <div>Token</div>
                 <input type="password" id="tokenbox" class="textbox">
                 <div><button id="submitButton">Submit</button></div>
